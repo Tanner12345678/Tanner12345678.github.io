@@ -1,0 +1,1 @@
+alert('You are currently browsing ' + window.location + '. Thank you for visiting, and please enjoy your stay!');

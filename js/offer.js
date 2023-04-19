@@ -1,15 +1,15 @@
 (function() {
 		var web = {
-			message: "MORE PYTHON FACTS AVAIABLE FOR ",
-			cost: 29,
+			message: 'MORE PYTHON FACTS AVAIABLE FOR ',
+			cost: 9.99,
 			discount: 1,
 			offerPrice: function() {
 				var offerRate = this.siteRate * ((100 - this.discount) / 100);
 				return offerRate;
+				}
 			}
-		}
 		
-		var siteName, siteRate, specialRate;
+		var siteRate, specialRate;
 		
 		siteMessage = document.getElementById('siteMessage');
 		siteRate = document.getElementById('siteRate');
@@ -18,7 +18,6 @@
 		siteMessage.textContent = web.message;
 		siteRate.textContent = '$' + web.cost.toFixed(2);
 		specialRate.textContent = '$' + web.offerPrice();
-		
 		
 		var expiryMsg;
 		var today;
@@ -38,17 +37,26 @@
 			month = monthNames[weekFromToday.getMonth()];
 			year = weekFromToday.getFullYear();
 			
-			expiryMsg = "LIMITED TIME OFFER EXPIRES ";
+			expiryMsg = "(LIMITED TIME OFFER EXPIRES ";
 			expiryMsg += day + ' <br />(' + date + ' ' + month + ' ' + year + ')';
 			return expiryMsg;
 		}
 		
 		today = new Date();
-		elEnds = document.getElementById('offerEnds')
-		elEnds.innerHTML = offerExpires(today);
+		elEnds = document.getElementById('offerEnds');
+		function updateMessage() {
+			elEnds = document.getElementById('offerEnds');
+		elEnds.textContent = web.message;
+		}
+		updateMessage();
 }());
 
-document.write('<p>' + web.message + web.offerPrice + expiryMsg + offerExpires(today) + '</p>');
+//function updateMessage() {
+	//var el = document.getElementById('message');
+	//el.textContent = msg;
+//}
+//updateMessage(); 
+
 
 
 

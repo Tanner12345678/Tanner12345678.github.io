@@ -35,15 +35,16 @@ script {
 	width: 90%;
 }
 
-#offerEnds p {
-	color: #fff;
+#message {
+	display: block;
+	background-color: #000;
+	text-align: center;
+	padding: 2%;
+	margin: 0 auto;
+	width: 90%;
 }
 
-#offerEnds h1 {
-	color: #fff;
-}
-
-#offerEnds h3 {
+.offertext {
 	color: #fff;
 }
 
@@ -69,6 +70,10 @@ footer p {
 }
 
 /* Style rules for main content */
+
+main {
+	font-family: 'Segoe UI';
+}
 
 /* Style rules for footer content */
 
