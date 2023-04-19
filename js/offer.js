@@ -44,9 +44,10 @@
 		
 		today = new Date();
 		elEnds = document.getElementById('offerEnds');
+		
 		function updateMessage() {
 			elEnds = document.getElementById('offerEnds');
-		elEnds.textContent = web.message;
+		elEnds.textContent = siteMessage;
 		}
 		updateMessage();
 }());

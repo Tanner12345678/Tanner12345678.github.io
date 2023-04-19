@@ -36,12 +36,7 @@ script {
 }
 
 #message {
-	display: block;
-	background-color: #000;
 	text-align: center;
-	padding: 2%;
-	margin: 0 auto;
-	width: 90%;
 }
 
 .offertext {
