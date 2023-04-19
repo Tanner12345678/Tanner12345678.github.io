@@ -2,7 +2,7 @@
 		var web = {
 			message: 'MORE PYTHON FACTS AVAIABLE FOR ',
 			cost: 9.99,
-			discount: 1,
+			discount: 10,
 			offerPrice: function() {
 				var offerRate = this.siteRate * ((100 - this.discount) / 100);
 				return offerRate;
@@ -44,12 +44,7 @@
 		
 		today = new Date();
 		elEnds = document.getElementById('offerEnds');
-		
-		function updateMessage() {
-			elEnds = document.getElementById('offerEnds');
-		elEnds.textContent = siteMessage;
-		}
-		updateMessage();
+		elEnds.textContent = offerExpires(today);
 }());
 
 //function updateMessage() {
