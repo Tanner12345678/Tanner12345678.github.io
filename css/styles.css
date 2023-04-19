@@ -1,0 +1,128 @@
+
+/* CSS Reset*/
+body, header, nav, main footer, h1, div, img, ul, figure, figcaption, section, article, aside {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* Style rules for body and images */
+body {
+		background-color: #fff; 
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+script {
+	display: block;
+	font-size: 1.25em;
+}
+
+/* Style rules for box sizing applies to all elements */
+*{
+	box-sizing: border-box;
+}
+
+#offerEnds {
+	display: block;
+	background-color: #000;
+	text-align: center;
+	padding: 2%;
+	margin: 0 auto;
+	width: 90%;
+}
+
+#offerEnds p {
+	color: #fff;
+}
+
+#offerEnds h1 {
+	color: #fff;
+}
+
+#offerEnds h3 {
+	color: #fff;
+}
+
+footer p {
+	text-align: center;
+}
+
+/* Style rules for mobile viewport */
+
+/* Style rules for header */ 
+
+	
+/* Style rules for navigation area */
+
+
+/* Show mobile class, hide tablet-desktop class */
+.mobile {
+	display: block;
+}
+
+.tablet-desktop {
+	display: none;
+}
+
+/* Style rules for main content */
+
+/* Style rules for footer content */
+
+/*Media Query for Tablet Viewport */
+@media screen and (min-width: 630px), print {
+	
+	/*Tablet Viewport: Show tablet-desktop class, hide mobile class. */
+	.tablet-desktop {
+		display: block;
+	}
+	
+	.mobile {
+		display: none;
+	}
+	
+	/* Tablet Viewport: Style rule for header */
+
+	
+	/* Tablet Viewport: style rules for nav area */
+
+	
+	/* Tablet Viewport: Style rules for main content area */
+
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1015px), print {
+	
+	/* Desktop Viewport: Style rule for header */
+
+	
+	/* Desktop Viewport: Style rules for nav area */
+
+	/* Desktop Viewport: Style rules for main content */
+
+}
+
+/* Media Query for Large Desktop viewports */
+@media screen and (min-width: 1921px) {
+		
+		#container {
+			width: 1920px;
+			margin: 0 auto;
+		}
+		
+}
+
+/* Media Query for Print */
+@media print {
+	
+	body {
+		background-color: #fff;
+		color: #000;
+	}
+	
+}
+	
