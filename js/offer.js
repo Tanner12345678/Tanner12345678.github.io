@@ -1,7 +1,7 @@
 (function() {
-		var web = {
-			message: 'MORE PYTHON FACTS AVAIABLE FOR ',
-			cost: 9.99,
+		var site = {
+			name: 'MORE PYTHON FACTS AVAIABLE FOR',
+			cost: 10,
 			discount: 10,
 			offerPrice: function() {
 				var offerRate = this.siteRate * ((100 - this.discount) / 100);
@@ -9,15 +9,15 @@
 				}
 			}
 		
-		var siteRate, specialRate;
+		var siteName, siteRate, specialRate;
 		
-		siteMessage = document.getElementById('siteMessage');
+		siteName = document.getElementById('siteName');
 		siteRate = document.getElementById('siteRate');
 		specialRate = document.getElementById('specialRate');
 		
-		siteMessage.textContent = web.message;
-		siteRate.textContent = '$' + web.cost.toFixed(2);
-		specialRate.textContent = '$' + web.offerPrice();
+		siteName.textContent = site.name;
+		siteRate.textContent = '$' + site.cost.toFixed(2);
+		specialRate.textContent = '$' + site.offerPrice();
 		
 		var expiryMsg;
 		var today;
@@ -44,14 +44,8 @@
 		
 		today = new Date();
 		elEnds = document.getElementById('offerEnds');
-		elEnds.textContent = offerExpires(today);
+		elEnds.innerHEMLS = offerExpires(today);
 }());
-
-//function updateMessage() {
-	//var el = document.getElementById('message');
-	//el.textContent = msg;
-//}
-//updateMessage(); 
 
 
 
