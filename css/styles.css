@@ -25,7 +25,7 @@ script {
 	box-sizing: border-box;
 }
 
-#offerEnds {
+#offerText {
 	display: block;
 	background-color: #000;
 	text-align: center;
@@ -44,6 +44,30 @@ script {
 	border-radius: 5px;
 	border: 3px solid #000;
 	font-weight: bold;
+}
+
+#list {
+	padding: 0 0 0 5%;
+}
+
+.nonvenomous {
+	color: #648200;
+}
+
+.venomous {
+	color: #820064;
+}
+
+.nonvenomous::before {
+	color: #648200;
+	font-weight: bold;
+	content: "☮ "
+}
+
+.venomous::before {
+	color: #820064;
+	font-weight: bold;
+	content: "☣ "
 }
 
 textarea {
