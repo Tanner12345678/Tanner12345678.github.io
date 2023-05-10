@@ -46,8 +46,23 @@ script {
 	font-weight: bold;
 }
 
+.species {
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-gap: 20px;
+}
+
 #list {
-	padding: 0 0 0 5%;
+	padding: 0 0 0 5%;		
+}
+
+#list li.n a {
+	text-decoration: none;
+	color: #648200;
+}
+#list li.v a {
+	text-decoration: none;
+	color: #820064;
 }
 
 .nonvenomous {
