@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app>
 <head>
 	<title>Reticulated Pythons</title>
 	<meta charset="utf-8">
@@ -7,6 +7,7 @@
 	<link rel="shortcut icon" href="images/favicon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
 	<link rel="icon" sizes="192x192" href="images/favicon.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
 </head>
 <body>
 
@@ -20,37 +21,38 @@
 				<li><a href="more.html">More</a></li>
 				<li><a href="secret.html">Secret</a></li>
 				<li><a href="merch.html">Merchandise</a></li>
+				
 			</ul>
 		</nav>
 	</header>
 
 	<!-- use the main area to add the main content of the webpage -->
 	<main>
-		<br>
-		<div id="message">
-		<p> Did you know? Reticulated Pythons are just fantastic. It's truer than true.</p>
-		</div>
-		<script src="js/subscription.js"></script>
-	
-		<img src="images/python-4.png" alt="reticulated python" height="50%" width="50%">
-		
-		<p>This is the third page of the website. This page contains nothing of importance and is entirely unnecessary.</p>
-		
-		<p>Here's a fun fact: Reticulated Pythons are the only snake species known to have eaten humans in their native range. It's true.</p>
-		
-		<br>
-		<br>
-		<br>
-		<p style="text-align: center;">Did you know? I have no idea how to cleverly incorporate this function into my website. So, here it is, right here!</p>
-		
-		<h1 id="noteName">Type anything in the box below and it will display here!</h1>
-		
-		<textarea id="username"> enter your message here. </textarea>
-		<script src="js/event.js"></script>
-		
-		<!-- <script src="js/event.js"></script> -->
-		
 
+	<h1 style="text-align: center; font-weight: bold;">Merch Store</h1>
+	<hr>
+	<h3 style="text-align: center; font-weight: bold;">Create a custom postcard!</h3>
+	
+	
+	
+	<div id="card">
+	
+	<form>
+	To:<br>
+	<input ng-model="to" type="text"/><br>
+	From:<br>
+	<input ng-model="from" type="text"/><br>
+	<input type="submit" value="Create Card!" />
+	</form>
+
+	<div id="container">
+	<img src="images/card.jpg" alt="error displaying template" height="100%">
+	<h1 id="to" class="cardtext">{{ to }}</h1>
+	<h1 id="from" class="cardtext">{{ from }}</h1>
+	</div>
+	
+	</div>
+		
 	</main>
 
 	<!-- Use the footer area to add webpage footer content -->

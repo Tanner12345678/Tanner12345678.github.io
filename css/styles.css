@@ -52,6 +52,48 @@ script {
 		grid-gap: 20px;
 }
 
+form {
+	text-align: center;
+}
+
+#card {
+		display: grid;
+		grid-template-columns: 20% auto;
+		grid-gap: 50px;
+}
+
+#container {
+		position: relative;
+		margin: 0 5% 0 0;
+}
+
+#to {
+		position: absolute;
+		bottom: 150px;
+		right: 10px;
+}
+
+#to::before {
+	color: #23b574;
+	content: "To: "
+}
+
+#from {
+		position: absolute;
+		bottom: 50px;
+		right: 10px;
+}
+
+#from::before {
+	color: #23b574;
+	content: "From: "
+}
+
+.cardtext {
+	color: #23b574;
+	font-family: 'fredoka one', 'arial rounded mt bold', 'segoe ui';
+}
+
 #list {
 	padding: 0 0 0 5%;		
 }
