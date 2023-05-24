@@ -37,14 +37,14 @@
 			month = monthNames[weekFromToday.getMonth()];
 			year = weekFromToday.getFullYear();
 			
-			expiryMsg = "(LIMITED TIME OFFER EXPIRES ";
+			expiryMsg = "LIMITED TIME OFFER EXPIRES ";
 			expiryMsg += day + ' <br />(' + date + ' ' + month + ' ' + year + ')';
 			return expiryMsg;
 		}
 		
 		today = new Date();
 		elEnds = document.getElementById('offerEnds');
-		elEnds.innerHEMLS = offerExpires(today);
+		elEnds.innerHTML = offerExpires(today);
 }());
 
 
