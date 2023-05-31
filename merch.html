@@ -31,10 +31,26 @@
 
 	<h1 style="text-align: center; font-weight: bold;">Merch Store</h1>
 	<hr>
-	<h3 style="text-align: center; font-weight: bold;">Create a custom postcard!</h3>
+	<h2 style="text-align: center; font-weight: bold;">Clothing & Toys</h2>
 	
+	<div id="buttons"></div>
+	<br>
+	<div id="gallery">
+		<img src="images/shirt1.jpg" data-tags="All, Shirts" alt="t-shirt with python decal">
+		<img src="images/shirt2.jpg" data-tags="All, Shirts" alt="t-shirt with python decal">
+		<img src="images/beanie1.jpg" data-tags="All, Hats" alt="beanie with python embroidery">
+		<img src="images/shirt3.jpg" data-tags="All, Shirts" alt="t-shirt with python decal">
+		<img src="images/beanie2.jpg" data-tags="All, Hats" alt="beanie with viper embroidery">
+		<img src="images/shirt4.jpg" data-tags="All, Shirts" alt="t-shirt with python decal">
+		<img src="images/plush.jpg" data-tags="All, Toys" alt="python plush">
+		<img src="images/shirt5.jpg" data-tags="All, Shirts" alt="t-shirt with boa decal">
+		<img src="images/beanie3.jpg" data-tags="All, Hats" alt="beanie with snake embroidery">
+	</div>
 	
-	
+	<br>
+	<p style="text-align: center;">Disclaimer: Merchandise pictured is not actually for sale. Used art is not mine.</p>
+	<hr>
+	<h2 style="text-align: center; font-weight: bold;">Create a custom postcard!</h2>
 	<div id="card">
 	
 	<form>
@@ -46,7 +62,7 @@
 	</form>
 
 	<div id="container">
-	<img src="images/card.jpg" alt="error displaying template" height="100%">
+	<img src="images/card.jpg" alt="error displaying template">
 	<h1 id="to" class="cardtext">{{ to }}</h1>
 	<h1 id="from" class="cardtext">{{ from }}</h1>
 	</div>
@@ -54,6 +70,9 @@
 	</div>
 		
 	</main>
+	
+	<script src="js/jquery-1.11.0.js"></script>
+	<script src="js/tags.js"></script>
 
 	<!-- Use the footer area to add webpage footer content -->
 	<footer>
