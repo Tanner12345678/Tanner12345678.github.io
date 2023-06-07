@@ -25,6 +25,10 @@ script {
 	box-sizing: border-box;
 }
 
+.hide {
+	display: none;
+}
+
 #offerText {
 	display: block;
 	background-color: #000;
@@ -53,7 +57,11 @@ script {
 }
 
 form {
-	text-align: center;
+	margin: 0 0 0 20%;
+}
+
+fieldset {
+	border: none;
 }
 
 #card {
